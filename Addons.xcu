@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data
+	oor:name="Addons"
+	xmlns:oor="http://openoffice.org/2001/registry"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	oor:package="org.openoffice.Office">
+
+	<node oor:name="AddonUI">
+		<node oor:name="OfficeMenuBar">
+			<node oor:name="org.penguintechs.wt.libreoffice.AWSCosting" oor:op="replace">
+				<prop oor:name="Title" oor:type="xs:string">
+					<value/>
+					<value xml:lang="en-US">WT's AWS Costing</value>
+				</prop>
+				<prop oor:name="Target" oor:type="xs:string">
+					<value>_self</value>
+				</prop>
+				<prop oor:name="ImageIdentifier" oor:type="xs:string">
+					<value/>
+				</prop>
+				<node oor:name="Submenu">
+					<node oor:name="org.penguintechs.wt.libreoffice.ImportEC2Pricing" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>vnd.sun.star.job:service=org.penguintechs.wt.libreoffice.ImportEC2Pricing</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value/>
+							<value xml:lang="en-US">Import Pricing Data</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Context" oor:type="xs:string">
+							<value>com.sun.star.sheet.SpreadsheetDocument</value>
+						</prop>
+					</node>
+					<node oor:name="org.penguintechs.wt.libreoffice.ImportEC2InstanceData" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>vnd.sun.star.job:service=org.penguintechs.wt.libreoffice.ImportEC2InstanceData</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value/>
+							<value xml:lang="en-US">Import Instance Data</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Context" oor:type="xs:string">
+							<value>com.sun.star.sheet.SpreadsheetDocument</value>
+						</prop>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+</oor:component-data>

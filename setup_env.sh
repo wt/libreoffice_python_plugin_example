@@ -1,0 +1,2 @@
+export PYSCRIPT_LOG_LEVEL=DEBUG
+export PYUNO_LOGTARGET=stderr
